@@ -10,6 +10,7 @@ body {
 .containerH {
   width: 100%;
   height: 100vh;
+  min-height: 100%;
   margin: 0 auto;
   /* overflow: hidden; */
 }
@@ -35,17 +36,17 @@ body {
   left: -130px;
   top: -130px;
   transition: all 0.3s;
-  /* z-index: 1; */
 }
 .menu-container.full-menu {
   border-radius: 0;
   padding: 0 !important;
-  position: aboslute;
+  position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   transition: all 0.3s;
+  z-index: 1;
 }
 
 .full-menu .menu {
@@ -78,7 +79,8 @@ body {
 
 .overlay {
   position: fixed;
-  top: 0;
+  /* top: 0; */
+  top: 90px;
   left: 0;
   width: 100%;
   height: 0%;
@@ -91,6 +93,7 @@ body {
   visibility: visible;
   height: 100%;
   z-index: 1;
+  /* background-color: #ffc901; */
 
 }
 .overlay.open li {
@@ -111,7 +114,9 @@ body {
   font-family: "Titan One", san-serif;
   position: relative;
   height: 70%;
-  top: 50%;
+  /* top: 50%; */
+  top: 43%;
+
   transform: translateY(-50%);
   font-weight: 400;
   text-align: center;
